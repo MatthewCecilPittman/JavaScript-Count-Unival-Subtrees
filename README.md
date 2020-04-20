@@ -25,7 +25,8 @@ function recursiveUnivalHelper(treeNode) {
     count += leftCount;
 
     // Determine if current node is root of unival subtree
-    sameValue = sameValue && treeNode.value === treeNode.left.value;
+   
+   sameValue = sameValue && treeNode.value === treeNode.left.value;
     isUnival = isUnival && leftIsUnival && sameValue;
   }
   if (treeNode.right) {
@@ -34,7 +35,8 @@ function recursiveUnivalHelper(treeNode) {
     count += rightCount;
 
     // Determine if current node is root of unival subtree
-    sameValue = sameValue && treeNode.value === treeNode.right.value;
+   
+   sameValue = sameValue && treeNode.value === treeNode.right.value;
     isUnival = isUnival && rightIsUnival && sameValue;
   }
 
